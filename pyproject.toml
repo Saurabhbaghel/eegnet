@@ -1,0 +1,27 @@
+[project]
+name = "eegnet-study"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.0",
+    "mne>=1.12.1",
+    "scikit-learn>=1.9.0",
+    "umap-learn>=0.5.12",
+    "torch>=2.2.0",
+    "ipykernel>=7.3.0",
+]
+
+
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" },
+]
+
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
